@@ -7,14 +7,10 @@ import re
 import sys
 
 # Complete the solve function below.
-def solve(s):
-    s = s.split(" ")
-    fname = s[0]
-    lname = s[1]
-    fname = fname.capitalize()
-    lname = lname.capitalize()
-    fullname = fname + " " + lname
-    return(fullname)
+def solve(s):#ab bc ca
+    s = s.split(" ")#["ab","bc","ca"]
+    k = [j.capitalize() for j in s] #["Ab","Bc","Ca"]
+    return(" ".join(k))#Ab Bc Ca
 
 
 
